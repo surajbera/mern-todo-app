@@ -1,5 +1,6 @@
 const express = require('express')
 const router = express.Router()
+const delay = require('../middlewares/delay')
 
 const todos = [
   { id: 1, text: 'some text some text', isComplete: false },
@@ -10,7 +11,6 @@ const todos = [
 
 /* CRUD */
 router.post('/', (req, res) => {
-  const data = req.body;
   res.status(201).send('Some Response')
 })
 

@@ -1,5 +1,7 @@
 - LTS - long term support
 - https://www.npmjs.com/package/colors
+- Middleware is a function that runs between the request and response cycle
+- Middleware function can be ran for a particular route by passing it as the second argument
 
 ```JS
 "scripts": {
@@ -21,4 +23,13 @@ dotenv.config({path: 'backend/config.env'})
 ```JS
   const id = req.params.id
   /* return value is a string */
+```
+
+```JS
+// Method 1:
+app.use(delay(isInProduction ? 0 : 5000))
+
+// Method 2
+isInProduction ? '' : app.use(delay(2000))
+/* Method 1 is preferable */
 ```

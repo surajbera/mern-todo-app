@@ -2,20 +2,12 @@ const express = require('express')
 const router = express.Router()
 
 /* CRUD */
-router.post('/home', (req, res) => {
-  res.status(201).send('Some response')
+router.post('/register', (req, res) => {
+  res.send()
 })
 
-router.get('/home', (req, res) => {
-  res.send('Some response')
-})
-
-router.put('/home', (req, res) => {
-  res.send('Some response')
-})
-
-router.delete('/home', (req, res) => {
-  res.send('Some response')
+router.post('/login', (req, res) => {
+  res.send()
 })
 
 module.exports = router

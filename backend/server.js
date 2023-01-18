@@ -9,6 +9,7 @@ const [PORT] = require('./scripts/getProdDetails')(3939)
 const todosRoute = require('./routes/todosRoute')
 const usersRoute = require('./routes/usersRoute')
 
+app.use(express.json())
 app.use('/api/todos', todosRoute)
 app.use('/api/users', usersRoute)
 

@@ -3,7 +3,7 @@ const router = express.Router()
 
 /* CRUD */
 router.post('/home', (req, res) => {
-  res.send('Some response')
+  res.status(201).send('Some response')
 })
 
 router.get('/home', (req, res) => {

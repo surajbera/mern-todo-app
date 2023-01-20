@@ -3,6 +3,7 @@ const router = express.Router()
 
 /* CRUD */
 router.post('/register', (req, res) => {
+  console.log('POST register route called', req.body);
   res.send()
 })
 

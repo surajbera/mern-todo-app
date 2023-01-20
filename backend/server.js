@@ -11,7 +11,7 @@ const todosRoute = require('./routes/todosRoute')
 const usersRoute = require('./routes/usersRoute')
 const [PORT, isInProduction] = getProdDetails(3939)
 
-app.use(delay(isInProduction ? 0 : 1000))
+app.use(delay(isInProduction ? 0 : 500))
 app.use(express.json())
 app.use('/api/todos', todosRoute)
 app.use('/api/users', usersRoute)

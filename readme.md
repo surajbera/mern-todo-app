@@ -1,6 +1,7 @@
 - LTS - long term support
 - https://www.npmjs.com/package/colors
-- Middleware is a function that runs between the request and response cycle
+- Middleware is a function that runs between the request and response cycle - Tutor's def
+- Middleware functions are functions that have access to the request object(req), the response object(res), and the next middleware function in the application's request-response cycle - Actual Def
 - Middleware function can be ran for a particular route by passing it as the second argument
 
 ```JS
